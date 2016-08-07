@@ -13,11 +13,11 @@ public class MainController {
 		System.out.println("Starting page");
 		return("index");
 	}
-	@RequestMapping("/register")
+	@RequestMapping("/registration")
 	public String reg()
 	{
 		System.out.println("At register page");
-		return("register");
+		return("registration");
 	}
 	@RequestMapping("/login")
 	public String log()
