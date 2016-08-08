@@ -1,0 +1,29 @@
+body{
+	background-image: "bg.jpg"
+	color: red;
+}
+h1,h2,h3,a,p{
+	color:green;
+}
+.navbar
+{
+    background-color: black;
+}
+.navbar li a{
+	color:white !important;
+}
+.navbar li a:hover{
+    color:green !important;
+}
+.navbar-default .navbar-nav>.active>a{
+	background-color: #397478 !important;
+}
+.navbar-header{
+	color:orange;
+}
+.dropdown-menu{
+    background-color: black
+}
+.list-group-submenu{
+    padding: 2px;
+}

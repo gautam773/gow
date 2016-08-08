@@ -1,0 +1,17 @@
+.navbar
+{
+	background-color: black;
+}
+.navbar-toggle{
+	background-color: red;
+}
+.nav-pills {
+	color: cyan;
+}
+.dropdown{
+	background-color: cyan;
+
+}
+.data-toggle{
+	background-color: blue;
+}

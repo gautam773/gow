@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
-<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,21 +12,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Trendz</title>
 
- 
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
- <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
- <link rel="stylesheet" href="${contextPath}/resources/css/jquery-ui.css">
-    <link href="${contextPath}/resources/css/common.css" rel="stylesheet">
-   <link rel="stylesheet" href="${contextPath}/resources/css/hoverc.css">
-  <link rel="stylesheet" href="${contextPath}/resources/css/gowtham.css">
-  <link rel="stylesheet" href="${contextPath}/resources/css/samp.css">
-   <link href="${contextPath}/resources/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+ <link rel="stylesheet" href="resources/css/jquery-ui.css">
+    <link href="resources/css/common.css" rel="stylesheet">
+   <link rel="stylesheet" href="resources/css/hoverc.css">
+  <link rel="stylesheet" href="resources/css/gowtham.css">
+  <link rel="stylesheet" href="resources/css/samp.css">
+   <link href="resources/css/style.css" rel="stylesheet" type="text/css" media="all" />
   
 <!-- Latest compiled and minified JavaScript -->
 
 
- 
-  <script src="${contextPath}/resources/js/samp.js"></script>
+   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <script src="resources/js/samp.js"></script>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
@@ -231,28 +236,28 @@
   
 <div class="item active">
   
-  <img class="img-responsive" src="<c:url value="/resources/project/jeans/tshirt/wedding saree/Latest-Designs-Of-Indian-Bridal-Sarees-2014-2.jpg" />  alt="" width="600" height="400">
+  <img class="img-responsive" src="resources/project/jeans/tshirt/wedding saree/Latest-Designs-Of-Indian-Bridal-Sarees-2014-2.jpg" alt="" width="600" height="400">
  
   </div>
 
 
 <div class="item">
     
-  <img class="img-responsive" src="<c:url value="/resources/project/jeans/tshirt/wedding saree/Admyrin-Art-Decor-Pink-Colour-Crepe-Saree-Decorated-By-Hand-Work-Wedding-Sarees.jpg" /> alt="" width="600" height="400">
+  <img class="img-responsive" src="resources/project/jeans/tshirt/wedding saree/Admyrin-Art-Decor-Pink-Colour-Crepe-Saree-Decorated-By-Hand-Work-Wedding-Sarees.jpg" /> alt="" width="600" height="400">
  
   </div>
 <!--item2-->
 
 <div class="item">
   
-  <img class="img-responsive" src="<c:url value="/resources/project/jeans/tshirt/wedding saree/Designer-wedding-Sarees-For-Womens.jpg" /> alt="" width="600" height="400">
+  <img class="img-responsive" src="resources/project/jeans/tshirt/wedding saree/Designer-wedding-Sarees-For-Womens.jpg"  alt="" width="600" height="400">
   
   </div>
 <!--item3-->
 
 <div class="item">
   
-  <img class="img-responsive" src="<c:url value="/resources/project/jeans/tshirt/wedding saree/Online-Shopping-Of-Wedding-Saree-For-Women(01).jpg" />  alt="" width="600" height="400">
+  <img class="img-responsive" src="resources/project/jeans/tshirt/wedding saree/Online-Shopping-Of-Wedding-Saree-For-Women(01).jpg"  alt="" width="600" height="400">
   
 </div><!--item4-->
 
@@ -279,11 +284,11 @@
 <div class="row">
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
-     <img class="img-responsive " src="<c:url value="/resources/cas_fit.jpg" /> alt="img">
+     <img class="img-responsive " src="<c:url value="resources/project/cas_fit.jpg" /> alt="img">
        <h4>Casual Shirt</h4>
       <p class="caption"><del>Rs.700</del> Rs.500 </p>
               <div class="overlay">
-                    <a class="info" href="project/cas_fit.jpg">Zoom</a>
+                    <a class="info" href="resources/project/cas_fit.jpg">Zoom</a>
          </div>
     </div>
     <button   class="btn btn-primary"> <span class="glyphicon glyphicon-shopping-cart "></span>add to cart</button>
@@ -292,11 +297,11 @@
     <div class="border">
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
-      <img class="img-responsive" src="${contextPath}/project/slim.jpg">
+      <img class="img-responsive" src=""resources/project/slim.jpg">
       <h4>Office Wear</h4>
       <p class="caption"><del>Rs.1100</del> Rs.750</p>
            <div class="overlay">
-                    <a class="info" href="${contextPath}/project/slim.jpg">Zoom</a>
+                    <a class="info" href=""resources/project/slim.jpg">Zoom</a>
         </div>
     </div>
       
@@ -307,11 +312,11 @@
     
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
-      <img class="img-responsive" src="<c:url value="/resources/pro_for.jpg"/> alt="img">
+      <img class="img-responsive" src="<c:url value="resources/pro_for.jpg"/> alt="img">
       <h4>Office Suit</h4>
       <p class="caption"><del>Rs.1550</del> Rs.1100</p>
            <div class="overlay">
-                    <a class="info" href="project/pro_for.jpg">Zoom</a>
+                    <a class="info" href="resources/project/pro_for.jpg">Zoom</a>
         </div>
       </div>
     <button   class="btn btn-primary"> <span class="glyphicon glyphicon-shopping-cart "></span>add to cart</button>
@@ -320,12 +325,12 @@
 
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
-      <img class="img-responsive " src="project/pro.jpg">
+      <img class="img-responsive " src="resources/project/pro.jpg">
       <h4>Office Suit</h4>
       <p class="caption"><del>Rs.2000</del> Rs.1300</p>
       
     <div class="overlay">
-                    <a class="info" href="project/pro.jpg">Zoom</a>
+                    <a class="info" href="resources/project/pro.jpg">Zoom</a>
         </div>
       </div> 
       <button   class="btn btn-primary"> <span class="glyphicon glyphicon-shopping-cart "></span>add to cart</button>
@@ -337,11 +342,11 @@
         <div class="row"> <!--Nesting_Started-->
      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
-      <img class="img-responsive " src="project/cas.jpg">
+      <img class="img-responsive " src="resources/project/cas.jpg">
       <h4>Neat Casual</h4>
       <p class="caption"><del>Rs.800</del> Rs.650</p>
             <div class="overlay">
-                    <a class="info" href="project/cas.jpg">Zoom</a>
+                    <a class="info" href="resources/project/cas.jpg">Zoom</a>
         </div>
       </div>
       <button   class="btn btn-primary"> <span class="glyphicon glyphicon-shopping-cart "></span>add to cart</button>
@@ -350,11 +355,11 @@
     
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
-      <img class="img-responsive " src="project/cas1.jpg">
+      <img class="img-responsive " src="resources/project/cas1.jpg">
       <h4>Blue Casual</h4>
       <p class="caption"><del>Rs.750</del> Rs.650</p>
            <div class="overlay">
-                    <a class="info" href="project/cas1.jpg">Zoom</a>
+                    <a class="info" href="resources/project/cas1.jpg">Zoom</a>
         </div>
       </div>
       <button   class="btn btn-primary"> <span class="glyphicon glyphicon-shopping-cart "></span>add to cart</button>
@@ -367,7 +372,7 @@
       <h4>Brown Casual</h4>
       <p class="caption"><del>Rs.800</del> Rs.650</p>
            <div class="overlay">
-                    <a class="info" href="project/cas2.jpg">Zoom</a>
+                    <a class="info" href="resources/project/cas2.jpg">Zoom</a>
         </div>
       </div>
        <button   class="btn btn-primary"> <span class="glyphicon glyphicon-shopping-cart "></span>add to cart</button>
@@ -377,11 +382,11 @@
 
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
-      <img class="img-responsive " src="project/cas3.jpg">
+      <img class="img-responsive " src="resources/project/cas3.jpg">
       <h4>Silver Casual</h4>
       <p class="caption"><del>Rs.860</del> Rs.700</p>
             <div class="overlay">
-                    <a class="info" href="project/cas3.jpg">Zoom</a>
+                    <a class="info" href="resources/project/cas3.jpg">Zoom</a>
         </div>
       </div> 
       <button   class="btn btn-primary"> <span class="glyphicon glyphicon-shopping-cart "></span>add to cart</button>
@@ -391,11 +396,11 @@
 </div>
  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
-      <img class="img-responsive " src="project/cas3.jpg">
+      <img class="img-responsive " src="resources/project/cas3.jpg">
       <h4>Silver Casual</h4>
       <p class="caption"><del>Rs.860</del> Rs.700</p>
             <div class="overlay">
-                    <a class="info" href="project/cas3.jpg">Zoom</a>
+                    <a class="info" href="resources/project/cas3.jpg">Zoom</a>
         </div>
       </div> 
       <button   class="btn btn-primary"> <span class="glyphicon glyphicon-shopping-cart "></span>add to cart</button>
@@ -405,11 +410,11 @@
 
  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
-      <img class="img-responsive " src="project/cas3.jpg">
+      <img class="img-responsive " src="resources/project/cas3.jpg">
       <h4>Silver Casual</h4>
       <p class="caption"><del>Rs.860</del> Rs.700</p>
             <div class="overlay">
-                    <a class="info" href="project/cas3.jpg">Zoom</a>
+                    <a class="info" href="resources/project/cas3.jpg">Zoom</a>
         </div>
       </div> 
       <button   class="btn btn-primary"> <span class="glyphicon glyphicon-shopping-cart "></span>add to cart</button>
@@ -419,11 +424,11 @@
 
  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
-      <img class="img-responsive " src="project/cas3.jpg">
+      <img class="img-responsive " src="resources/project/cas3.jpg">
       <h4>Silver Casual</h4>
       <p class="caption"><del>Rs.860</del> Rs.700</p>
             <div class="overlay">
-                    <a class="info" href="project/cas3.jpg">Zoom</a>
+                    <a class="info" href="resources/project/cas3.jpg">Zoom</a>
         </div>
       </div> 
       <button   class="btn btn-primary"> <span class="glyphicon glyphicon-shopping-cart "></span>add to cart</button>
@@ -433,11 +438,11 @@
 
  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
-      <img class="img-responsive " src="project/cas3.jpg">
+      <img class="img-responsive " src="resources/project/cas3.jpg">
       <h4>Silver Casual</h4>
       <p class="caption"><del>Rs.860</del> Rs.700</p>
             <div class="overlay">
-                    <a class="info" href="project/cas3.jpg">Zoom</a>
+                    <a class="info" href="resources/project/cas3.jpg">Zoom</a>
         </div>
       </div> 
       <button   class="btn btn-primary"> <span class="glyphicon glyphicon-shopping-cart "></span>add to cart</button>
@@ -447,11 +452,11 @@
 
  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
-      <img class="img-responsive " src="project/cas3.jpg">
+      <img class="img-responsive " src="resources/project/cas3.jpg">
       <h4>Silver Casual</h4>
       <p class="caption"><del>Rs.860</del> Rs.700</p>
             <div class="overlay">
-                    <a class="info" href="project/cas3.jpg">Zoom</a>
+                    <a class="info" href="resources/project/cas3.jpg">Zoom</a>
         </div>
       </div> 
       <button   class="btn btn-primary"> <span class="glyphicon glyphicon-shopping-cart "></span>add to cart</button>
@@ -461,11 +466,11 @@
 
  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
-      <img class="img-responsive " src="project/cas3.jpg">
+      <img class="img-responsive " src="resources/project/cas3.jpg">
       <h4>Silver Casual</h4>
       <p class="caption"><del>Rs.860</del> Rs.700</p>
             <div class="overlay">
-                    <a class="info" href="project/cas3.jpg">Zoom</a>
+                    <a class="info" href="resources/project/cas3.jpg">Zoom</a>
         </div>
       </div> 
       <button   class="btn btn-primary"> <span class="glyphicon glyphicon-shopping-cart "></span>add to cart</button>
@@ -475,11 +480,11 @@
 
  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
-      <img class="img-responsive " ${contextPath}/project/cas3.jpg">
+      <img class="img-responsive " src=" resources/project/cas3.jpg">
       <h4>Silver Casual</h4>
       <p class="caption"><del>Rs.860</del> Rs.700</p>
             <div class="overlay">
-                    <a class="info" href="project/cas3.jpg">Zoom</a>
+                    <a class="info" href="resources/project/cas3.jpg">Zoom</a>
         </div>
       </div> 
       <button   class="btn btn-primary"> <span class="glyphicon glyphicon-shopping-cart "></span>add to cart</button>
@@ -495,10 +500,13 @@
     })
     </script>
   
+ <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
  
-<script src="${contextPath}/resources/js/bootstrap.min.js" ></script>
-<script src="${contextPath}/resources/js/jquery-ui.js"></script>
-<script src="${contextPath}/resources/js/jquery.min.js"></script>
+
+<script src="resources/js/jquery-ui.js"></script>
+<script src="resources/js/jquery.min.js"></script>
 </body>
 
 </html>

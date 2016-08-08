@@ -26,6 +26,6 @@ http://www.springframework.org/schema/mvc
 		</property>
 	</bean>
 	
-	<mvc:resources location="/resources/" mapping="/resources/**" />
+	<mvc:resources location="/WEB-INF/resources/" mapping="/resources/**" />
 
 </beans>
