@@ -1,4 +1,4 @@
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="spring"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
@@ -227,15 +227,23 @@
 	  <div class="main">
 		<h2>Login Here</h2><hr/>
  
-		<form id="form_id" method="post" name="myform">
-		  <label>User Name :</label></br>
-		  <input type="text" name="username" id="username"/></br>
- 
-		  <label>Password :</label></br>
-		  <input type="password" name="password" id="password"/></br>
- 
-		  <input type="button" value="login" id="submit" onclick="validate()"/>
-		</form>
+		<spring:form method="post" action="isValidUser">
+					<div class="login-form-header p-0">
+						<h1>Sign in to LapKart</h1>
+					</div>
+					<div class="login-form-body mt-3">
+						<label for="username">Username</label> <input
+							class="form-control input-block"  name="name"
+							tabindex="1" type="text"  required="true">
+						<label for="password">Password<a href="ResetPassword.html"
+							class="label-link">Forgot password?</a></label> <input
+							class="form-control form-control input-block" 
+							name="password" tabindex="2" type="password"
+							 required="true"> <input
+							class="btn btn-primary btn-block" name="commit" tabindex="3"
+							type="submit" value="Sign in">
+					</div>
+				</spring:form>
 		
 	  </div>
 	  

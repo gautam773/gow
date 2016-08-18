@@ -343,5 +343,22 @@ public class MainController {
 			System.out.println("At girls leggins collection page");
 			return("leggins");
 		}
-		
+		@RequestMapping("/category")
+		public String category()
+		{
+			System.out.println("At admins category page");
+			return("category");
+		}
+		@RequestMapping("/supplier")
+		public String supplier()
+		{
+			System.out.println("At admins supplier page");
+			return("supplier");
+		}
+		@RequestMapping("/product")
+		public String product()
+		{
+			System.out.println("At admins product page");
+			return("product");
+		}
 }
