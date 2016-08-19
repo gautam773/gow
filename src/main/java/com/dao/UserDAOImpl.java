@@ -31,8 +31,8 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	@Transactional
-	public UserDetails get(String id) {
-		String hql = "from UserDetails where id=" + "'" + id + "'";
+	public UserDetails get(String username) {
+		String hql = "from UserDetails where username=" + "'" + username + "'";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		@SuppressWarnings("unchecked")
 		List<UserDetails> listUserDetails = (List<UserDetails>) query.list();
@@ -50,15 +50,15 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	@Transactional
-	public void delete(String id) {
+	public void delete(String username) {
 		UserDetails UserToDelete = new UserDetails();
-		UserToDelete.setId(id);
+		UserToDelete.setUsername(username);
 		sessionFactory.getCurrentSession().delete(UserToDelete);
 	}
 
 	@Transactional
-	public boolean isValidUser(String id, String password, boolean isAdmin) {
-		String hql = "from UserDetails where id=" + "'" + id + "'" + " and " + " password =" + "'" + password + "'";
+	public boolean isValidUser(String username, String password, boolean isAdmin) {
+		String hql = "from UserDetails where username=" + "'" + username + "'" + " and " + " password =" + "'" + password + "'";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 
 		@SuppressWarnings("unchecked")

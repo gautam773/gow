@@ -64,6 +64,6 @@ public class CategoryController {
 		System.out.println("in edit Category");
 		model.addAttribute("category", this.categoryDAO.get(id));
 		model.addAttribute("listCategories", this.categoryDAO.list());
-		return "redirect:/categories";
+		return "redirect:/category";
 	}
 }

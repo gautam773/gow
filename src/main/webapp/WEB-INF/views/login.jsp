@@ -229,7 +229,7 @@
  
 		<spring:form method="post" action="isValidUser">
 					<div class="login-form-header p-0">
-						<h1>Sign in to LapKart</h1>
+						<h2>Sign in to Trendz</h2>
 					</div>
 					<div class="login-form-body mt-3">
 						<label for="username">Username</label> <input

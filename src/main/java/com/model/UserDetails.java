@@ -14,8 +14,8 @@ import org.springframework.stereotype.Component;
 public class UserDetails {
 
 	@Id
-	@Column(name = "id")
-	private String id;
+	@Column(name = "username")
+	private String username;
 
 	@Column(name = "name")
 	private String name;
@@ -51,12 +51,12 @@ public class UserDetails {
 		this.password = password;
 	}
 
-	public String getId() {
-		return id;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setId(String id) {
-		this.id = id;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public String getName() {

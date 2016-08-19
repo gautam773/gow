@@ -26,13 +26,13 @@ public class UserController {
 
 
 	@RequestMapping("/isValidUser")
-	public ModelAndView showMessage(@RequestParam(value = "name") String id,
+	public ModelAndView showMessage(@RequestParam(value = "name") String username,
 			@RequestParam(value = "password") String password) {
 		System.out.println("in user controller");
 
 		String message;
 		ModelAndView mv;
-		if (userDAO.isValidUser(id, password, true)) {
+		if (userDAO.isValidUser(username, password, true)) {
 			message = "Valid credentials";
 			mv = new ModelAndView("admin");
 		} else {
@@ -41,7 +41,7 @@ public class UserController {
 		}
 
 		mv.addObject("message", message);
-		mv.addObject("name", id);
+		mv.addObject("name", username);
 
 		return mv;
 	}
