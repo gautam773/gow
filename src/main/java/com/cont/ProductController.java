@@ -63,7 +63,7 @@ public class ProductController {
 		product.setId(newID);
 		productDAO.saveorUpdate(product);
 
-		return "redirect:/products";
+		return "redirect:/product";
 
 	}
 
@@ -78,7 +78,7 @@ public class ProductController {
 			e.printStackTrace();
 		}
 		// redirectAttrs.addFlashAttribute(arg0, arg1)
-		return "redirect:/products";
+		return "redirect:/product";
 	}
 
 	@RequestMapping("product/edit/{id}")

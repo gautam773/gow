@@ -19,11 +19,16 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.dao.CategoryDAO;
 import com.dao.CategoryDAOImpl;
+import com.dao.ProductDAO;
+import com.dao.ProductDAOImpl;
+import com.dao.SupplierDAO;
+import com.dao.SupplierDAOImpl;
 import com.dao.UserDAO;
 import com.dao.UserDAOImpl;
 
 import com.model.Category;
-
+import com.model.Product;
+import com.model.Supplier;
 import com.model.UserDetails;
 
 @Configuration
@@ -55,7 +60,8 @@ public class ApplicationContextConfig {
 		LocalSessionFactoryBuilder sessionBuilder = new LocalSessionFactoryBuilder(dataSource);
 		sessionBuilder.addProperties(getHibernateProperties());
 		sessionBuilder.addAnnotatedClass(Category.class);
-		
+		sessionBuilder.addAnnotatedClass(Product.class);
+		sessionBuilder.addAnnotatedClass(Supplier.class);
 		sessionBuilder.addAnnotatedClass(UserDetails.class);
     	
 
@@ -86,6 +92,20 @@ public class ApplicationContextConfig {
 	public UserDAO getUserDAO(SessionFactory sessionFactory)
 	{
 		return new UserDAOImpl(sessionFactory);
+		
+	}
+	@Autowired
+	@Bean(name="supplierDao")
+	public SupplierDAO getSupplierDAO(SessionFactory sessionFactory)
+	{
+		return new SupplierDAOImpl(sessionFactory);
+		
+	}
+	@Autowired
+	@Bean(name="productDao")
+	public ProductDAO getProductDAO(SessionFactory sessionFactory)
+	{
+		return new ProductDAOImpl(sessionFactory);
 		
 	}
 	
