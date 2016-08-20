@@ -1,17 +1,24 @@
 package com.cont;
 
+import java.io.PrintWriter;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import javax.swing.text.Document;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.dao.CategoryDAO;
 import com.dao.UserDAO;
 import com.model.Category;
+import com.model.UserDetails;
+import com.util.Util;
 
 @Controller
 public class UserController {
@@ -35,11 +42,16 @@ public class UserController {
 		if (userDAO.isValidUser(username, password, true)) {
 			message = "Valid credentials";
 			mv = new ModelAndView("admin");
-		} else {
-			message = "Invalid credentials";
-			mv = new ModelAndView("Login");
+		} 
+			else if(userDAO.isValidUser(username, password, false)){
+			message="welcome user";
+			mv=new ModelAndView("index");
+		
 		}
-
+			else {
+				message = "Invalid credentials";
+				mv = new ModelAndView("Login");
+			}
 		mv.addObject("message", message);
 		mv.addObject("name", username);
 
@@ -59,5 +71,19 @@ public class UserController {
 		return mv;
 	 }
 
+	@RequestMapping(value = "/myform", method = RequestMethod.POST)
+	public String addUserDetails(@ModelAttribute("userDetails") UserDetails userDetails) {
+		
+		System.out.println("in registration controller");
+		
+String newusername = Util.removeComma(userDetails.getUsername());
+		
+		userDetails.setUsername(newusername);
+		userDAO.saveorUpdate(userDetails);
+
+		System.out.println(" registration successful");
+		return("/onlineshopping");
+
+	}
 
 }

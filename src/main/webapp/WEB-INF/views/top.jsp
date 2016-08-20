@@ -62,23 +62,12 @@ span {
 }
 
 </style>
-<script type="text/javascript">
-	$(document).ready(function() {
-		$('#test').BootSideMenu({
-			side : "left"
-		});
-		$('#test2').BootSideMenu({
-			side : "right"
-		});
-	});
-</script>
-
 </head>
 <body>
 
 
 
-	<div id="navbar">
+	
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -90,10 +79,7 @@ span {
 					</button>
 					<a class="navbar-brand" href="/onlineshopping">Trendz</a>
 				</div>
-<ul class="nav navbar-collapse navbar-right collapse">
-      <li><a href="registration"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
+
 				<div class="collapse navbar-collapse" id="navbar-collapse-1">
 					<ul class="nav navbar-nav">
 					
@@ -101,19 +87,20 @@ span {
 						<li class="active"><a href="/onlineshopping">Home</a></li>
 
 
-						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Women <b class="caret"></b></a>
+						 <li class="dropdown">
+						 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Women <span class="caret"></span></a>
 
 							<ul class="dropdown-menu">
-								<li class="kopie"><a href="women">Women</a></li>
+								<li ><a href="women">Women</a></li>
 								<li class="active"><a href="#">Sarees</a></li>
 								<li><a href="#">Kurtas</a></li>
 								<li><a href="skirts">Skirts</a></li>
 
 								<li class="dropdown dropdown-submenu"><a href="ethinic" class="dropdown-toggle" data-toggle="dropdown">Ethinic Wears</a>
 									<ul class="dropdown-menu">
-										<li class="kopie"><a href="#">All Ethinic Wears</a></li>
+										<li><a href="#">All Ethinic Wears</a></li>
 										<li><a href="partysarees">Party Wear Sarees</a></li>
-										<li><a href="synthetic">Synthetic Sarees</a></li>
+										<li><a href="#">Synthetic Sarees</a></li>
 										<li><a href="fancysarees">Fancy Sarees</a></li>
 										<li><a href="cottonsarees">Cotton Sarees</a></li>
 										<li><a href="cottonembroiderysarees">Cotton
@@ -207,18 +194,18 @@ span {
 							</ul></li>
 							
 					<!--navbar-collapse-->
-				 	
+			
 		</ul>
+			<ul class="nav navbar-nav navbar-right">
+      <li><a href="registration"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>		
 						
 				</div>
-				
+			
 	</div>
+	
 	</nav>
-		</div>
+	
+		
 		<br> <br>
-		<div class="jumbotron">
-			<h2>Welcome to TRENDZ</h2>
-			<h3>
-				Find dress for both <span>men</span> and <span>Women</span>
-			</h3>
-		</div>

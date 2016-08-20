@@ -14,7 +14,7 @@
   
 .dropdown-submenu > a:after {
   border-color: transparent transparent transparent #333;
-  border-style: solid;
+  border-style:none;
   border-width: 5px 0 5px 5px;
   content: " ";
   display: block;
@@ -30,7 +30,7 @@
  }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > .active > a:hover {
-  text-decoration: underline;
+  text-decoration:blink;
 }  
   
 @media (max-width: 767px) {
@@ -46,7 +46,7 @@
   }
   .navbar-default .navbar-nav .dropdown-menu > li > a {
     color: red;
-    background-color: #ccc;
+    background-color: #0080ff;
     border-radius: 4px;
     margin-top: 2px;   
   }
@@ -55,7 +55,7 @@
    }
    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-     background-color: #ccc;
+     background-color: #0080ff;
    }
 
    .navbar-nav .open .dropdown-menu {

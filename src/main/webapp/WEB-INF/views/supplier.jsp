@@ -18,6 +18,7 @@ table, th, td {
 </style>
 </head>
 <body>
+<div class="container">
 	<%@include file="admin.jsp"%>
 	<h1>Add a Supplier</h1>
 
@@ -89,6 +90,9 @@ table, th, td {
 			</c:forEach>
 		</table>
 	</c:if>
+</div>
+<br>
+<br>
 
 </body>
 </html>

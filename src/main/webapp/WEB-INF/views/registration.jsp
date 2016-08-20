@@ -1,4 +1,4 @@
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="spring"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
@@ -238,59 +238,49 @@
 	  <div class="main">
 		<h2>Register Here</h2><hr/>
  
-	<form id="form_id" method="post" name="myform">
+	
+					<spring:form method="post" action="myform">
 					<div>
-						<label>
-							First Name:<input placeholder="First name:" type="text" tabindex="1" required autofocus>
-						</label>
-					</div>
-					<div>
-						<label>
-							Last Name:<input placeholder="Last name:" type="text" tabindex="2" required autofocus>
-						</label>
-					</div>
-					<div>
-						<label>
+						
+						<label >
 							User Name:<input placeholder="Username:" type="text"  name="username" tabindex="2" required autofocus>
 						</label>
 					</div>
 					<div>
-						<label>
-							D.O.B:<input placeholder="D.O.B:" type="text" id="datepicker" tabindex="3" required>
-						</label>
-					</div>
-					<div>
-						<label>
-							Email Id:<input placeholder="Email address:" type="email" tabindex="3" required>
-						</label>
-					</div>
-					<div>
-						<label>
-							Phone Num:<input placeholder="Mobile:" type="text" name="Phone Number" pattern="[7-9]{1}[0-9]{9}" title="Phone number must starts with 7-9" tabindex="3" required>
-							
-						</label>
-					</div>					
-						<div>
-							<ul>
-								<li><label class="radio left"><input type="radio" name="radio" checked=""><i></i>Male</label></li>
-								<li><label class="radio"><input type="radio" name="radio"><i></i>Female</label></li>
-								<div class="clearfix"></div>
-							</ul>
-						</div>					
-					<div>
-						<label>
-							Password:<input placeholder="Password:" type="password" name="pwd1"  tabindex="4" required autofocus>
+						<label >
+							Password:<input placeholder="Password:" type="password" name="password"  tabindex="4" required autofocus>
 						</label>
 					</div>						
+					
 					<div>
-						<label>
-							Retype Password:<input placeholder="retype password" type="password" name="pwd2" tabindex="4" required>
+						<label >
+							 Name:<input placeholder="Name:" type="text"  name="name" tabindex="2" required autofocus>
 						</label>
-					</div>	
-					<div>
-						<input type="submit" value="create an account" id="register-submit">
 					</div>
-					</form>
+					<div>
+						<label >
+							Address:<input placeholder="Address" name="address" type="text" id="datepicker" tabindex="3" required>
+						</label>
+					</div>
+					<div>
+						<label >
+							Email Id:<input placeholder="Email address:" name="mail_id" type="email" tabindex="3" required>
+						<label>
+					</div>
+					<div>
+						<label >
+							Phone Num:<input placeholder="Mobile:" type="text" name="contact_number" pattern="[7-9]{1}[0-9]{9}" title="Phone number must starts with 7-9" tabindex="3" required>
+							
+						<label>
+					</div>					
+										
+					
+					<div>
+						<input type="submit" value="create an account" id="myform">
+					</div>
+				</spring:form>
+	  </div>
+	  </div>
 	  </div>
 	  </div>
 	  

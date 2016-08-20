@@ -84,144 +84,144 @@
 
 
   
- <div id="navbar">    
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-              <a class="navbar-brand" href="#">Trendz</a>
-            </div>
-            
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index">Home</a></li>
-                   
-                  
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women <b class="caret"></b></a> 
-                      
-                        <ul class="dropdown-menu">
-                          <li class="kopie"><a href="women">Women</a></li>
-                            <li class="active"><a href="#">Sarees</a></li>
-                            <li ><a href="#">Kurtas</a></li>
-                            <li><a href="#">Skirts</a></li>
-                          
-                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Ethinic Wears</a>
-                <ul class="dropdown-menu">
-                                    <li class="kopie"><a href="#">All Ethinic Wears</a></li>
-                  <li><a href="#">Party Wear Sarees</a></li>
-                  <li><a href="#">Synthetic Sarees</a></li>
-                  <li><a href="#">Fancy Sarees</a></li>
-                  <li><a href="#">Fancy Silk</a></li>
-                  <li><a href="#">Fancy Art Silk Sarees</a></li>
-                  <li><a href="#">Cotton Sarees</a></li>
-                  <li><a href="#">Cotton Embroidery Sarees</a></li>
-                  <li><a href="#">Fancy Cotton Sarees</a></li>
-                  <li><a href="#">Half Sarees</a></li>
-                  <li><a href="#">Jeans</a></li>
-                  <li><a href="#">Tops</a></li>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/onlineshopping">Trendz</a>
+				</div>
 
-                                                                      
-                </ul>
-              </li>
-                          
-                                                              
-                        </ul>
-                    </li>
-                   
-                          
-                                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Men <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li class="kopie"><a href="#">Men</a></li>
-                            
-                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Tshirt</a>
-                <ul class="dropdown-menu">
-                                    <li class="kopie"><a href="#">T Shirt</a></li>
-                  <li><a href="#">Round Neck TShirt</a></li>
-                  <li><a href="#">VNeck TShirt</a></li>
-                  
-                                   
-                </ul>
-              </li>
-                           
-                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Shirt=</a>
-                <ul class="dropdown-menu">
-                                    
-                  <li><a href="#">Formal Shirt</a></li>
-                  <li><a href="#">Casual Shirt</a></li>
-                  <li><a href="#">Suits</a></li>
-                  <li><a href="#">Silk Shirt</a></li>
-                                   
-                </ul>
-              </li>
-                            <li><a href="#">Jeans</a></li>
-                            
-                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Trousers</a>
-                <ul class="dropdown-menu">
-                                    <li class="kopie"><a href="#">Trousers</a></li>
-                  <li><a href="#">Formal Trousers</a></li>
-                  <li><a href="#">Blazers</a></li>
-                  <li><a href="#">Casual Trousers</a></li>
-                  <li><a href="#">Sports Wear</a></li>
-                                   
-                </ul>
-              </li>
-                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dhothis</a>
-                <ul class="dropdown-menu">
-                                    <li class="kopie"><a href="#">Dhothi</a></li>
-                  <li><a href="#">Silk Dhothi</a></li>
-                  <li><a href="#">Cotton Dhothi</a></li>
-                  <li><a href="#">Cotton Velcro Dhothi</a></li>
-                 
-                </ul>
-              </li>                                  
-                        </ul>
-                    </li>
-                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Kids <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li class="kopie"><a href="#">Kids</a></li>
-                            
-                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Boys</a>
-                <ul class="dropdown-menu">
-                                    <li class="kopie"><a href="#">Boys</a></li>
-                  <li><a href="#">Polos&T-Shirtst</a></li>
-                  <li><a href="#">Shirts</a></li>
-                  <li><a href="#">Shorts&3/4ths</a></li>
-                  <li><a href="#">Trousers&Cargos</a></li>
-                  <li><a href="#">Jeans</a></li>
-                  <li><a href="#">Dungarees&Jumpsuits</a></li>
-                  <li><a href="#">Ethinic Wear</a></li>
-                  <li><a href="#">Sports Wear</a></li>                  
-                                   
-                </ul>
-              </li>
-                           
-                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Girls</a>
-                <ul class="dropdown-menu">
-                                    
-                  <li><a href="#">T-Shirt</a></li>
-                  <li><a href="#">Dress&Skirts</a></li>
-                  <li><a href="#">Jeans</a></li>
-                  <li><a href="#">Trousers</a></li>
-                  <li><a href="#">Party Frocks</a></li>
-                  <li><a href="#">Ethinic Wear</a></li>
-                  <li><a href="#">Leggins</a></li>
-                                   
-                </ul>
-              </li>
-                            
-                </ul>
-                <div class="navbar-collapse navbar-right collapse">
-                <li> 
-                <a href="login">login</a> </li>
-                <li><a href="registration">sign up</a></li>
-            </div><!-- /.navbar-collapse -->
-        </nav>
+				<div class="collapse navbar-collapse" id="navbar-collapse-1">
+					<ul class="nav navbar-nav">
+					
+		
+						<li class="active"><a href="/onlineshopping">Home</a></li>
+
+
+						 <li class="dropdown">
+						 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Women <span class="caret"></span></a>
+
+							<ul class="dropdown-menu">
+								<li ><a href="women">Women</a></li>
+								<li class="active"><a href="#">Sarees</a></li>
+								<li><a href="#">Kurtas</a></li>
+								<li><a href="skirts">Skirts</a></li>
+
+								<li class="dropdown dropdown-submenu"><a href="ethinic" class="dropdown-toggle" data-toggle="dropdown">Ethinic Wears</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">All Ethinic Wears</a></li>
+										<li><a href="partysarees">Party Wear Sarees</a></li>
+										<li><a href="#">Synthetic Sarees</a></li>
+										<li><a href="fancysarees">Fancy Sarees</a></li>
+										<li><a href="cottonsarees">Cotton Sarees</a></li>
+										<li><a href="cottonembroiderysarees">Cotton
+												Embroidery Sarees</a></li>
+										<li><a href="fancycottonsarees">Fancy Cotton Sarees</a></li>
+										<li><a href="halfsarees">Half Sarees</a></li>
+										<li><a href="wjeans">Jeans</a></li>
+										<li><a href="tops">Tops</a></li>
+
+
+									</ul></li>
+
+
+							</ul></li>
+
+
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Men <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li class="kopie"><a href="#">Men</a></li>
+
+								<li class="dropdown dropdown-submenu"><a href="#"
+									class="dropdown-toggle" data-toggle="dropdown">Tshirt</a>
+									<ul class="dropdown-menu">
+										<li class="kopie"><a href="#">T Shirt</a></li>
+										<li><a href="roundneck">Round Neck TShirt</a></li>
+										<li><a href="vneck">VNeck TShirt</a></li>
+
+
+									</ul></li>
+
+								<li class="dropdown dropdown-submenu"><a href="shirt" class="dropdown-toggle" data-toggle="dropdown">Shirt</a>
+									<ul class="dropdown-menu">
+
+										<li><a href="fshirt">Formal Shirt</a></li>
+										<li><a href="cshirt">Casual Shirt</a></li>
+										<li><a href="suits">Suits</a></li>
+										<li><a href="blazers">Blazers</a></li>
+									</ul></li>
+								<li><a href="mjeans">Jeans</a></li>
+
+								<li class="dropdown dropdown-submenu"><a href="trousers" class="dropdown-toggle" data-toggle="dropdown">Trousers</a>
+									<ul class="dropdown-menu">
+
+										<li><a href="ftrousers">Formal Trousers</a></li>
+
+										<li><a href="ctrousers">Casual Trousers</a></li>
+
+
+									</ul></li>
+								<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dhothis</a>
+									<ul class="dropdown-menu">
+										<li class="kopie"><a href="dhothi">Dhothi</a></li>
+										<li><a href="sdhothi">Silk Dhothi</a></li>
+										<li><a href="cdhothi">Cotton Dhothi</a></li>
+										<li><a href="cvdhothi">Cotton Velcro Dhothi</a></li>
+
+									</ul></li>
+							</ul></li>
+						<li class="dropdown"><a href="kids" class="dropdown-toggle" data-toggle="dropdown">Kids <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+
+
+								<li class="dropdown dropdown-submenu"><a href="boys"
+									class="dropdown-toggle" data-toggle="dropdown">Boys</a>
+									<ul class="dropdown-menu">
+
+										<li><a href="ptshirt">Polos&T-Shirtst</a></li>
+										<li><a href="bshirt">Shirts</a></li>
+
+										<li><a href="tcargo">Trousers&Cargos</a></li>
+										<li><a href="bjeans">Jeans</a></li>
+
+										<li><a href="bethinic">Ethinic Wear</a></li>
+										<li><a href="bsport">Sports Wear</a></li>
+
+									</ul></li>
+
+								<li class="dropdown dropdown-submenu"><a href="girls" class="dropdown-toggle" data-toggle="dropdown">Girls</a>
+									<ul class="dropdown-menu">
+
+										<li><a href="gtshirt">T-Shirt</a></li>
+										<li><a href="gdress">Dress&Skirts</a></li>
+										<li><a href="gjeans">Jeans</a></li>
+										<li><a href="gtrousers">Trousers</a></li>
+										<li><a href="pfroc">Party Frocks</a></li>
+										<li><a href="gethinic">Ethinic Wear</a></li>
+
+
+									</ul></li>
+
+							</ul></li>
+							
+					<!--navbar-collapse-->
+			
+		</ul>
+			<ul class="nav navbar-nav navbar-right">
+      <li><a href="registration"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>		
+						
+				</div>
+			
+	</div>
+	
+	</nav>
         <br><br>
 <div class="container">
 	  <div class="main">

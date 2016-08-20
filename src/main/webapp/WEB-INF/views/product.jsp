@@ -18,6 +18,7 @@ table, th, td {
 </style>
 </head>
 <body>
+<div class="container">
 	<%@include file="admin.jsp"%>
 
 	<br>
@@ -129,5 +130,8 @@ table, th, td {
 			</thead>
 		</table>
 	</c:if>
+	<br>
+	<br>
+	</div>
 </body>
 </html>
