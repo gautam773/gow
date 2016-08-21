@@ -1,11 +1,6 @@
 package com.cont;
-
-import java.io.PrintWriter;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import javax.swing.text.Document;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -13,12 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-
 import com.dao.CategoryDAO;
 import com.dao.UserDAO;
 import com.model.Category;
 import com.model.UserDetails;
-import com.util.Util;
+
 
 @Controller
 public class UserController {
@@ -31,32 +25,69 @@ public class UserController {
 	 @Autowired
 	 CategoryDAO categoryDAO;
 
-
-	@RequestMapping("/isValidUser")
-	public ModelAndView showMessage(@RequestParam(value = "name") String username,
-			@RequestParam(value = "password") String password) {
-		System.out.println("in user controller");
-
-		String message;
-		ModelAndView mv;
-		if (userDAO.isValidUser(username, password, true)) {
-			message = "Valid credentials";
-			mv = new ModelAndView("admin");
-		} 
-			else if(userDAO.isValidUser(username, password, false)){
-			message="welcome user";
-			mv=new ModelAndView("index");
-		
+	 @RequestMapping(value="/registertoDB",method =RequestMethod.POST)
+		public String registertoDB(@ModelAttribute("userdetails_entered") UserDetails user){
+			
+			String username;
+			username= user.getUsername();
+			if(userDAO.get(username)!=null){
+			System.out.println("already Exists");
+			
+			return "redirect:/registration";
+			}
+			else{
+				System.out.println("registered Successfully");
+				user.setAdmin(false);
+				userDAO.saveorUpdate(user);
+				
+				return "redirect:/login";
+			}
+			
+			
 		}
+	
+	
+
+	 @RequestMapping(value="/isValidUser", method = RequestMethod.POST)
+		public ModelAndView isValidUser(@RequestParam(value = "username") String username,
+											@RequestParam(value = "password") String password)
+		{
+		 System.out.println("in user controller");
+
+			String message;
+			ModelAndView mv;
+			if (userDAO.isValidUser(username, password)) {
+				message = "Valid credentials";
+				
+				boolean isAdmin;
+				isAdmin = false;
+				
+					if(userDAO.AdminCheck(username,isAdmin))
+					{
+						System.out.println("user logged in");
+						mv = new ModelAndView("index");
+						mv.addObject("name",username);
+					}
+					else
+					{
+						System.out.println("Admin logged in");
+						mv = new ModelAndView("admin");
+						mv.addObject("name",username);
+					} 
+			
+			}
 			else {
 				message = "Invalid credentials";
-				mv = new ModelAndView("Login");
+				mv = new ModelAndView("login");
 			}
-		mv.addObject("message", message);
-		mv.addObject("name", username);
 
-		return mv;
-	}
+			mv.addObject("message", message);
+			mv.addObject("username", username);
+
+			return mv;
+		}
+		
+	
 	@RequestMapping("/logout")
 	public ModelAndView logout(HttpServletRequest request, HttpSession session) {
 		ModelAndView mv = new ModelAndView("index");
@@ -71,19 +102,10 @@ public class UserController {
 		return mv;
 	 }
 
-	@RequestMapping(value = "/myform", method = RequestMethod.POST)
-	public String addUserDetails(@ModelAttribute("userDetails") UserDetails userDetails) {
+	
 		
-		System.out.println("in registration controller");
 		
-String newusername = Util.removeComma(userDetails.getUsername());
-		
-		userDetails.setUsername(newusername);
-		userDAO.saveorUpdate(userDetails);
+	
 
-		System.out.println(" registration successful");
-		return("/onlineshopping");
-
-	}
 
 }

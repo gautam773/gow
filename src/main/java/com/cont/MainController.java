@@ -13,6 +13,13 @@ public class MainController {
 		System.out.println("Starting page");
 		return("index");
 	}
+	@RequestMapping("/contact")
+	public String contactus()
+	{
+		
+		System.out.println("feedback page");
+		return("contact");
+	}
 	@RequestMapping("/registration")
 	public String reg()
 	{

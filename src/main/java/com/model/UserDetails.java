@@ -20,13 +20,13 @@ public class UserDetails {
 	@Column(name = "name")
 	private String name;
 
-	@Column(name = "mail_id")
+	@Column(name = "mailid")
 	private String mailID;
 
 	@Column(name = "address")
 	private String address;
 
-	@Column(name = "contact_number")
+	@Column(name = "contactnumber")
 	private String contactNumber;
 
 	@Column(name = "password")

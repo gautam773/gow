@@ -233,7 +233,7 @@
 					</div>
 					<div class="login-form-body mt-3">
 						<label for="username">Username</label> <input
-							class="form-control input-block"  name="name"
+							class="form-control input-block"  name="username"
 							tabindex="1" type="text"  required="true">
 						<label for="password">Password<a href="ResetPassword.html"
 							class="label-link">Forgot password?</a></label> <input

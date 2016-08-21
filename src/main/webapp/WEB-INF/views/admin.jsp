@@ -221,11 +221,7 @@ span {
 		</div>
 <body>
 <h1>Trendz Management Center</h1> <br>
-
-      <c:if test="${not empty pageContext.request.userPrincipal}">
-    User <c:out value="${pageContext.request.userPrincipal.name}" />
-</c:if>
-     
+<h1>welcome ${name}</h1>
 <a href="category"  ><img alt="Categories" src="resources/project/admin/category.jpg" ></a>
 <a href="supplier"  ><img alt="Suppliers" src="resources/project/admin/suppliers.jpg" ></a>
 <a href="product"  ><img alt="Products" src="resources/project/admin/products.jpg" ></a>

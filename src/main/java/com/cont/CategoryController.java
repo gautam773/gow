@@ -63,7 +63,7 @@ public class CategoryController {
 	public String editCategory(@PathVariable("id") String id, Model model) {
 		System.out.println("in edit Category");
 		model.addAttribute("category", this.categoryDAO.get(id));
-		model.addAttribute("listCategories", this.categoryDAO.list());
+		model.addAttribute("listCategory", this.categoryDAO.list());
 		return "redirect:/category";
 	}
 }

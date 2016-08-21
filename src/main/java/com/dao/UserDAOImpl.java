@@ -1,9 +1,13 @@
 package com.dao;
 
+
+
+
 import java.util.List;
 
 import org.hibernate.Criteria;
 import org.hibernate.Query;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -29,6 +33,15 @@ public class UserDAOImpl implements UserDAO {
 				.createCriteria(UserDetails.class).setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
 		return listUserDetails;
 	}
+	 public List<UserDetails> getAllUserDetails(){
+	        Session session = sessionFactory.getCurrentSession();
+	        Query query = session.createQuery("from Customer");
+	        @SuppressWarnings("unchecked")
+			List<UserDetails> userList = query.list();
+
+	        return userList;
+
+	    }
 
 	@Transactional
 	public UserDetails get(String username) {
@@ -57,7 +70,7 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	@Transactional
-	public boolean isValidUser(String username, String password, boolean isAdmin) {
+	public boolean isValidUser(String username, String password) {
 		String hql = "from UserDetails where username=" + "'" + username + "'" + " and " + " password =" + "'" + password + "'";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 
@@ -71,6 +84,22 @@ public class UserDAOImpl implements UserDAO {
 		return false;
 	}
 	
+	
+	@Transactional
+	public boolean AdminCheck(String username,boolean isAdmin){
+		String hql = "from UserDetails where username=" + "'" + username + "'" + "and admin=" + "'" + isAdmin + "'";
+		Query query = sessionFactory.getCurrentSession().createQuery(hql);
+		
+		@SuppressWarnings("unchecked")
+		List<UserDetails> list = (List<UserDetails>) query.list();
+		
+		if (list != null && !list.isEmpty()) {
+			return true;
+		}
 
+		return false;
+	}
+	
+	
 
 }

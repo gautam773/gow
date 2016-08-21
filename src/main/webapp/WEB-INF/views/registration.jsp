@@ -11,15 +11,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Trendz</title>
-  <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
-    <link href="${contextPath}/resources/css/common.css" rel="stylesheet">
+  <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/css/common.css" rel="stylesheet">
 
 
-   <link rel="stylesheet" href="${contextPath}/resources/css/hoverc.css">
-  <link rel="stylesheet" href="${contextPath}/resources/css/gowtham.css">
-  <link rel="stylesheet" href="${contextPath}/resources/css/samp.css">
-  <link href="${contextPath}/resources/css/style.css" rel="stylesheet" type="text/css" media="all" />
-   <link href="${contextPath}/resources/css/style1.css" rel="stylesheet" type="text/css" media="all" />
+   <link rel="stylesheet" href="resources/css/hoverc.css">
+  <link rel="stylesheet" href="resources/css/gowtham.css">
+  <link rel="stylesheet" href="resources/css/samp.css">
+  <link href="resources/css/style.css" rel="stylesheet" type="text/css" media="all" />
+   <link href="resources/css/style1.css" rel="stylesheet" type="text/css" media="all" />
  
 <!-- Latest compiled and minified JavaScript -->
 
@@ -28,7 +28,7 @@
   
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<script src="${contextPath}/resources/js/samp.js"></script>
+<script src="resources/js/samp.js"></script>
 
 <style type="text/css">
 .form-top {
@@ -72,15 +72,10 @@
     margin-bottom: 5px;
   }
 </style>
-  <script type="text/javascript">
-  $(document).ready(function(){
-      $('#test').BootSideMenu({side:"left"});
-      $('#test2').BootSideMenu({side:"right"});
-  });
-  </script>
+  
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/theme/ibase/jquery-ui.css">
-<script src="${contextPath}/resources/js/jquery-1.12.4.js"></script>
-  <script src="${contextPath}/resources/js/jquery-ui.js"></script>
+<script src="resources/js/jquery-1.12.4.js"></script>
+  <script src="resources/js/jquery-ui.js"></script>
   <script>
   $( function() {
     $( "#datepicker" ).datepicker({
@@ -89,7 +84,7 @@
     });
   } );
   </script>
-  <script type="text/javascript"> function checkForm(form) { if(form.username.value == "") { alert("Error: Username cannot be blank!"); form.username.focus(); return false; } re = /^\w+$/; if(!re.test(form.username.value)) { alert("Error: Username must contain only letters, numbers and underscores!"); form.username.focus(); return false; } if(form.pwd1.value != "" && form.pwd1.value == form.pwd2.value) { if(form.pwd1.value.length < 6) { alert("Error: Password must contain at least six characters!"); form.pwd1.focus(); return false; } if(form.pwd1.value == form.username.value) { alert("Error: Password must be different from Username!"); form.pwd1.focus(); return false; } re = /[0-9]/; if(!re.test(form.pwd1.value)) { alert("Error: password must contain at least one number (0-9)!"); form.pwd1.focus(); return false; } re = /[a-z]/; if(!re.test(form.pwd1.value)) { alert("Error: password must contain at least one lowercase letter (a-z)!"); form.pwd1.focus(); return false; } re = /[A-Z]/; if(!re.test(form.pwd1.value)) { alert("Error: password must contain at least one uppercase letter (A-Z)!"); form.pwd1.focus(); return false; } } else { alert("Error: Please check that you've entered and confirmed your password!"); form.pwd1.focus(); return false; } alert("You entered a valid password: " + form.pwd1.value); return true; } </script> <form ... onsubmit="return checkForm(this);">
+  
 </head>
 <body>
 
@@ -232,60 +227,57 @@
                 <a href="login">login</a> </li>
                 <li><a href="registration">sign up</a></li>
             </div><!-- /.navbar-collapse -->
+            </li>
+            </ul>
+            </div>
+            </div>
+           
         </nav>
         <br><br>
 <div class="container">
-	  <div class="main">
-		<h2>Register Here</h2><hr/>
- 
+  <h2 ">Register Here</h2>
+  <br/>
+  
+  <spring:form method="post" modelAttribute="userdetails_entered" action="registertoDB">
+
+    <div class="form-group">
+    <label for="username">User Name</label>
+    <input type="text" class="form-control" name="username" placeholder="User Name" >
+    </div>
+    <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" name="password" placeholder="password">
+    </div>
+
+    <div class="form-group">
+    <label for="mailid" >E-mail</label>
+    <input type="email" class="form-control" name="mailid" placeholder="E-mail" >
+    </div>
+
+    <div class="form-group">
+    <label for="contactnumber">Mobile Number:</label>
+    <input type="text" class="form-control" name="contactnumber" placeholder="mobile number">
+    </div>
+
+    <div class="form-group">
+    <label for="address">Address</label>
+    <input type="text" class="form-control" name="address" placeholder="Address" >
+    </div>
+
+    <div class="form-group">
+    <label for="name" >Name</label>
+    <input type="text" class="form-control" name="name" placeholder="Name" >
+    </div>
+
+    <div class="form-group">
+    <input type="submit" class="btn btn-success" value="Submit">
+    </div>
+
+  </spring:form>
+	  </div>
+	  </div>
+	 
 	
-					<spring:form method="post" action="myform">
-					<div>
-						
-						<label >
-							User Name:<input placeholder="Username:" type="text"  name="username" tabindex="2" required autofocus>
-						</label>
-					</div>
-					<div>
-						<label >
-							Password:<input placeholder="Password:" type="password" name="password"  tabindex="4" required autofocus>
-						</label>
-					</div>						
-					
-					<div>
-						<label >
-							 Name:<input placeholder="Name:" type="text"  name="name" tabindex="2" required autofocus>
-						</label>
-					</div>
-					<div>
-						<label >
-							Address:<input placeholder="Address" name="address" type="text" id="datepicker" tabindex="3" required>
-						</label>
-					</div>
-					<div>
-						<label >
-							Email Id:<input placeholder="Email address:" name="mail_id" type="email" tabindex="3" required>
-						<label>
-					</div>
-					<div>
-						<label >
-							Phone Num:<input placeholder="Mobile:" type="text" name="contact_number" pattern="[7-9]{1}[0-9]{9}" title="Phone number must starts with 7-9" tabindex="3" required>
-							
-						<label>
-					</div>					
-										
-					
-					<div>
-						<input type="submit" value="create an account" id="myform">
-					</div>
-				</spring:form>
-	  </div>
-	  </div>
-	  </div>
-	  </div>
-	  
-	  
-	</div>
 <!-- /container -->
 <script src="${contextPath}/resources/js/login.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

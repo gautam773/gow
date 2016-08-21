@@ -18,6 +18,7 @@ table, th, td {
 </style>
 </head>
 <body>
+welcome ${name}
 <div class="container">
 	<%@include file="admin.jsp"%>
 	<br>
