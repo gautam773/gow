@@ -18,9 +18,10 @@ table, th, td {
 </style>
 </head>
 <body>
-welcome ${name}
+
 <div class="container">
 	<%@include file="admin.jsp"%>
+	
 	<br>
 	<br>
 	<h1>Add a Category</h1>

@@ -21,16 +21,21 @@ public class UserDetails {
 	private String name;
 
 	@Column(name = "mailid")
-	private String mailID;
+	private String mailid;
 
 	@Column(name = "address")
 	private String address;
 
+	@Column(name = "dob")
+	private String dob;
+
 	@Column(name = "contactnumber")
-	private String contactNumber;
+	private String contactnumber;
 
 	@Column(name = "password")
 	private String password;
+	@Column(name = "passwor1")
+	private String password1;
 
 	@Column(name = "admin")
 	private boolean isAdmin;
@@ -67,12 +72,12 @@ public class UserDetails {
 		this.name = name;
 	}
 
-	public String getMailID() {
-		return mailID;
+	public String getmailid() {
+		return mailid;
 	}
 
-	public void setMailID(String mailID) {
-		this.mailID = mailID;
+	public void setmailid(String mailid) {
+		this.mailid = mailid;
 	}
 
 	public String getAddress() {
@@ -83,12 +88,12 @@ public class UserDetails {
 		this.address = address;
 	}
 
-	public String getContactNumber() {
-		return contactNumber;
+	public String getcontactnumber() {
+		return contactnumber;
 	}
 
-	public void setContactNumber(String contactNumber) {
-		this.contactNumber = contactNumber;
+	public void setcontactnumber(String contactnumber) {
+		this.contactnumber = contactnumber;
 	}
 
 }

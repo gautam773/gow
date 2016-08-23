@@ -33,6 +33,7 @@ public class UserDAOImpl implements UserDAO {
 				.createCriteria(UserDetails.class).setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
 		return listUserDetails;
 	}
+	 
 	 public List<UserDetails> getAllUserDetails(){
 	        Session session = sessionFactory.getCurrentSession();
 	        Query query = session.createQuery("from Customer");

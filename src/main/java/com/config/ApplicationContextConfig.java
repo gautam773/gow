@@ -16,7 +16,8 @@ import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-
+import com.dao.CartDAO;
+import com.dao.CartDAOImpl;
 import com.dao.CategoryDAO;
 import com.dao.CategoryDAOImpl;
 import com.dao.ProductDAO;
@@ -109,6 +110,14 @@ public class ApplicationContextConfig {
 		
 	}
 	
-	
+
+	@Autowired
+	@Bean(name="cartDao")
+	public CartDAO getCartDAO(SessionFactory sessionFactory)
+	{
+		return new CartDAOImpl(sessionFactory);
+		
+	}
+
 	
 }
